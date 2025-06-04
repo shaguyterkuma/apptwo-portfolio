@@ -26,7 +26,7 @@ with col2:
 morestuff = """Below you can find some of the apps I have built in python , Feel free to contact me """
 st.write(morestuff)
 
-col4,empty_col,col5 = st.columns([1.5,0.5,1.5]) #The numbers represent the ratio dimensions of the columns The first colum would be three times wider than the middle column adn the first and the third column are the same width
+col4,col_m,col5 = st.columns([1.5,0.5,1.5]) #The numbers represent the ratio dimensions of the columns The first colum would be three times wider than the middle column adn the first and the third column are the same width
 
 df = pandas.read_csv("data.csv",sep=";")
 
@@ -37,8 +37,10 @@ with col4:
         st.image("images/" + row["image"])
         st.write(f"[Source code]({row['url']})")
 
+
+
 with col5:
-    for index,row in df[10:].iterrows():
+    for index,row in df[10:20].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image( "images/" + row["image"])
