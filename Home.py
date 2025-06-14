@@ -17,9 +17,11 @@ with col1:
 with col2:
     st.title("Terkuma Sesugh Shaguy")
     content = """
-    Hello my name is Terkuma Sesugh Shaguy and i hope to work for microsoft one day and i want to go to MIT and make my family proud in every way possible i want to marry a
-    woman who values me and we look forward to eachothers goals and reach them together as a couple    
+    Hello, my name is Terkuma Sesugh Shaguy. I aspire to work at Microsoft and attend MIT, where I can further develop my skills and contribute to innovative technology.  
+    I am committed to making my family proud through hard work and dedication.  
+    In my personal life, I hope to build a partnership based on mutual respect and shared goals, supporting each other’s growth and success.
     """
+
     st.write(content)
 
 
